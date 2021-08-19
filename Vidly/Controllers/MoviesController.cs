@@ -22,5 +22,25 @@ namespace Vidly.Controllers
             // use anonymous object to pass arg to the target action, arg will appear as query string
             return RedirectToAction("Index", "Home", new { page = 1, sortBy = "name" });
         }
+
+        //  GET: movies/edit?id=1 or movies/edit/1
+        public ActionResult Edit(int id)
+        {
+            return Content("id=" + id);
+        }
+
+        // movies or override parameter with /movies?pageIndex=3&sortBy=Date
+        public ActionResult Index(int? pageIndex, string sortBy)
+        {
+            // 為了要讓 parameter optional，make it nullable
+            // pageIndex: ? make it an nullable integer
+            // sortBy: string in C# is a reference type, it's nullable
+            if (!pageIndex.HasValue)
+                pageIndex = 1;
+            if (String.IsNullOrWhiteSpace(sortBy))
+                sortBy = "Name";
+
+            return Content(String.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy));
+        }
     }
 }
