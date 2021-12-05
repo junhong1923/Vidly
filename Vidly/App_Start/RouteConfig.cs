@@ -19,7 +19,7 @@ namespace Vidly
             //    new { controller = "Movies", action = "ByReleaseDate" },
             //    new { year = @"2015|2016", month = @"\d{2}" });
 
-            routes.MapMvcAttributeRoutes();
+            routes.MapMvcAttributeRoutes(); // register this method to enable AttributeRoutes
 
             routes.MapRoute(
                 name: "Default",
