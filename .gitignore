@@ -1,0 +1,7 @@
+.vs/
+packages/
+bin
+Debug
+Vidly/Vidly.csproj
+Vidly/bin/*
+Vidly/obj/*
