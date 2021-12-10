@@ -84,3 +84,7 @@ C:\Users\James\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs
 C:\Users\James\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 C:\Users\James\source\repos\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\James\source\repos\Vidly\Vidly\obj\Debug\Vidly.pdb
+C:\Users\James\source\repos\Vidly\Vidly\bin\EntityFramework.dll
+C:\Users\James\source\repos\Vidly\Vidly\bin\EntityFramework.SqlServer.dll
+C:\Users\James\source\repos\Vidly\Vidly\bin\EntityFramework.xml
+C:\Users\James\source\repos\Vidly\Vidly\bin\EntityFramework.SqlServer.xml
